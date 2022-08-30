@@ -9,12 +9,17 @@
       img {
         max-width: 100%;
       }
-      p {
-        color: #1c3f81;
-        font-size: 20px;
+      *{
         font-family: Arial, Helvetica, sans-serif;
       }
+      p {
+        color: #1c3f81;
+        font-size: 16px;
+      }
       .container {
+        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
         background-color: #1c3f81;
       }
       .header {
@@ -26,6 +31,7 @@
       }
       .texto-top {
         text-align: center;
+        padding: 0 30px;
       }
       .texto-red {
         color: #df2f24;
@@ -41,6 +47,15 @@
       .center {
         margin: 0 auto;
         display: block;
+      }
+      .dato {
+        width: 600px;
+        max-width: 100%;
+        margin: 15px auto;
+      }
+      .vertical-center {
+        display: inline;
+        vertical-align: middle;
       }
       .cierre{
         background-color: white;
@@ -60,123 +75,126 @@
     <div class="container">
       <div class="header">
         <img
-          src="https://images.ctfassets.net/pcz6cf5u0j0b/7bgl813odn6rGqySYNpPXq/a29e248e521e9a0cc9ee18f73ce3fa41/consultorio-medico-logo.png"
-          alt="Consultorio Médico"
+          src="https://images.ctfassets.net/pcz6cf5u0j0b/7bgl813odn6rGqySYNpPXq/a29e248e521e9a0cc9ee18f73ce3fa41/consultorio-medico-logo.png?w=300"
+          alt="Consultorio logo"
           class="center"
           width="300px"
         />
       </div>
+      <div class="content">
+        <img
+          src="https://images.ctfassets.net/pcz6cf5u0j0b/3Zxw9ODXf8px7FrT0VI0E8/b888ce6745672abaa7091be7e60186dd/Recordatorio-cita.png"
+          alt="Recordatorio Cita"
+          class="center"
+          width="450px"
+        />
+        <div class="texto-top">
+          <p>
+            <strong
+              >Hola, <span id="nombre-paciente">Nombre del Paciente</span></strong
+            >
+          </p>
+          <p>
+            Te recordamos que
+            <strong class="texto-red">tienes una cita programada</strong> <br />
+            en Consultorio Médico de Farmacias Benavides.
+          </p>
+        </div>
+        <div class="datos-container">
+          <!-- Servicios -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/1gdDnTuX7xho8AgMC7GL7A/d3cb24998f26a1facb6258a718732bc4/Icono_Servicio.png?w=40"
+              alt="botiquin ícono"
+              width="40px"
+              class="vertical-center"
+            />
+            <p class="vertical-center">
+              <strong>Servicios:</strong>
+            </p>
+            <p
+            class="vertical-center"
+              style="margin-left: 20px"
+              id="servicios"
+            >
+              Servicio que el cliente haya agendado
+            </p>
+          </div>
+          <!-- Dia y hora -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/sMboM0gMKx4H2Em7gTdFK/170a249b63c3e635ccb0409a96f6b413/Icono_D__a_Hora.png?w=40"
+              alt="Calendario ícono"
+              width="40px"
+              class="vertical-center"            />
+            <p class="vertical-center">
+              <strong>Día y Hora:</strong>
+            </p>
+            <p class="vertical-center" style="margin-left: 13px">
+              <span id="fecha">dd/mm/aaaa</span> <span id="hora">XX:XX</span>
+            </p>
+          </div>
+          <!-- Consultorio -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/6ybFwaujwynt3yPPI2lQil/d592bbfa57e8cfe4689f417a32f4c318/Icono_Consultorio.png?w=40"
+              alt="estetoscopio ícono"
+              width="40px"
+              class="vertical-center"
+            />
+            <p class="vertical-center">
+              <strong>Consultorio:</strong>
+            </p>
+            <p
+            class="vertical-center"
+              style="margin-left: 5px"
+              id="nombre-sucursal"
+            >
+              Nombre de la sucursal
+            </p>
+          </div>
+          <!-- Direccion -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/3Few3PEtmzGj85PjHHAbSX/05baecec987f074b3278132a840db157/Icono_Direcci__n_Sucursal.png?w=40"
+              alt="lugar ícono"
+              width="40px"
+              class="vertical-center"
+            />
+            <p class="vertical-center">
+              <strong>Dirección:</strong>
+            </p>
+            <p
+            class="vertical-center"
+              style="margin-left: 24px"
+              id="direccion-sucursal"
+            >
+              Dirección de la sucursal
+            </p>
+          </div>
+        </div>
+        <div class="texto-top">
+          <p>
+            Te recordamos que en nuestros consultorios médicos no se realizan
+            <br />
+            procedimientos o exploraciones ginecológicas, urológicas y
+            proctólogicas.
+          </p>
+          <p>
+              Los procedimientos como aplicación de inyecciones, lavado ótico y curación de
+              <br>
+              heridas no incluyen el material, soluciones o medicamentos para su realización.
+          </p>
+        </div>
+        <div class="cierre">
+          <p class="texto-red">Para ver la cita o cancelarla da clic <strong><a href="">aquí</a></strong>
+          </p>
+        </div>
+        <div class="footer">
+          <img src="https://images.ctfassets.net/pcz6cf5u0j0b/aAPMaGsqPK0Mc0fAI7QyB/aa0dd5ebb20485c50eda46a47e075264/sentirte-acompanado.png" alt="Sentirte acompañado es sentirte mejor" width="400px" class="center">
+        </div>
+      </div>
     </div>
-    <div class="content">
-      <img
-        src="https://images.ctfassets.net/pcz6cf5u0j0b/3Zxw9ODXf8px7FrT0VI0E8/b888ce6745672abaa7091be7e60186dd/Recordatorio-cita.png"
-        alt="Recordatorio Cita"
-        class="center"
-        width="450px"
-      />
-      <div class="texto-top">
-        <p>
-          <strong
-            >Hola, <span id="nombre-paciente">Nombre del Paciente</span></strong
-          >
-        </p>
-        <p>
-          Te recordamos que
-          <strong class="texto-red">tienes una cita programada</strong> <br />
-          en Consultorio Médico de Farmacias Benavides.
-        </p>
-      </div>
-      <div class="datos-container">
-        <!-- Servicios -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/4PBFYh5jLUhIDwomGY5KU9/8eff9ccc8f3fb1bae5ed0d5073a1b60f/botiquin.png"
-            alt="botiquin ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Servicios:</strong>
-          </p>
-          <p
-            style="display: inline; vertical-align: middle; margin-left: 20px"
-            id="servicios"
-          >
-            Servicio que el cliente haya agendado
-          </p>
-        </div>
-        <!-- Dia y hora -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/3gIfBzSkGUPL4AkJikHxXr/b67de5192aaff077ee7e21510400edc1/Calendario.png"
-            alt="Calendario ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Día y Hora:</strong>
-          </p>
-          <p style="display: inline; vertical-align: middle; margin-left: 13px">
-            <span id="fecha">dd/mm/aaaa</span> <span id="hora">XX:XX</span>
-          </p>
-        </div>
-        <!-- Consultorio -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/6Zzgdkc5o6MLQUcr9G0FP6/829b14ea1f5d235d7fbcea980ac112b6/estetoscopio.png"
-            alt="estetoscopio ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Consultorio:</strong>
-          </p>
-          <p
-            style="display: inline; vertical-align: middle; margin-left: 5px"
-            id="nombre-sucursal"
-          >
-            Nombre de la sucursal
-          </p>
-        </div>
-        <!-- Direccion -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/61rqZtOxmtxwfdD3fCf1H4/7405a4c1bbea7749b39610c1497b0d81/Ubicacion.png"
-            alt="lugar ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Dirección:</strong>
-          </p>
-          <p
-            style="display: inline; vertical-align: middle; margin-left: 24px"
-            id="direccion-sucursal"
-          >
-            Dirección de la sucursal
-          </p>
-        </div>
-      </div>
-      <div class="texto-top">
-        <p>
-          Te recordamos que en nuestros consultorios médicos no se realizan
-          <br />
-          procedimientos o exploraciones ginecológicas, urológicas y
-          proctólogicas.
-        </p>
-        <p>
-            Los procedimientos como aplicación de inyecciones, lavado ótico y curación de
-            <br>
-            heridas no incluyen el material, soluciones o medicamentos para su realización.
-        </p>
-      </div>
-      <div class="cierre">
-        <p class="texto-red">Para ver la cita o cancelarla da clic <strong><a href="">aquí</a></strong>
-        </p>
-      </div>
-      <div class="footer">
-        <img src="https://images.ctfassets.net/pcz6cf5u0j0b/aAPMaGsqPK0Mc0fAI7QyB/aa0dd5ebb20485c50eda46a47e075264/sentirte-acompanado.png" alt="Sentirte acompañado es sentirte mejor" width="400px" class="center">
-      </div>
-    </div>
+    
   </body>
 </html>
