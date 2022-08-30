@@ -1,7 +1,7 @@
 
 # Emails benavides
 
-##Email Cita Ausente
+## Email Cita Ausente
 
 -Email Cita Ausente ~ Benamedic:
 https://waof-co.github.io/emails-benavides/ausente/ausente-benamedic.html
@@ -10,7 +10,7 @@ https://waof-co.github.io/emails-benavides/ausente/ausente-benamedic.html
 https://waof-co.github.io/emails-benavides/ausente/ausente-consultorio.html
 
 
-##Email Cita cancelada
+## Email Cita cancelada
 
 -Email Cita Cancelado ~ Benamedic:
 https://waof-co.github.io/emails-benavides/cancelada/cancelada-benamedic.html
@@ -19,7 +19,7 @@ https://waof-co.github.io/emails-benavides/cancelada/cancelada-benamedic.html
 https://waof-co.github.io/emails-benavides/cancelada/cancelada-consultorio.html
 
 
-##Email Cita Confirmada
+## Email Cita Confirmada
 
 -Email Cita Confirmada ~ Benamedic:
 https://waof-co.github.io/emails-benavides/confirmada/confirmada-benamedic.html
@@ -28,7 +28,7 @@ https://waof-co.github.io/emails-benavides/confirmada/confirmada-benamedic.html
 https://waof-co.github.io/emails-benavides/confirmada/confirmada-consultorio.html
 
 
-##Email Recordatorio de cita
+## Email Recordatorio de cita
 
 -Email Recordatorio de cita ~ Benamedic:
 https://waof-co.github.io/emails-benavides/recordatorio/recordatorio-benamedic.html
