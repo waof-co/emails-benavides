@@ -47,6 +47,15 @@
         margin: 0 auto;
         display: block;
       }
+      .dato{
+        width: 600px; 
+        max-width: 100%; 
+        margin: 15px auto;
+      }
+      .vertical-center{
+        display: inline; 
+        vertical-align: middle;
+      }
       .cierre {
         background-color: white;
         text-align: center;
@@ -67,7 +76,7 @@
       <div class="header">
         <img
           src="https://images.ctfassets.net/pcz6cf5u0j0b/7bgl813odn6rGqySYNpPXq/a29e248e521e9a0cc9ee18f73ce3fa41/consultorio-medico-logo.png"
-          alt="Consultorio Medico"
+          alt="Benamedic Logo"
           class="center"
           width="300px"
         />
@@ -94,33 +103,34 @@
         </div>
         <div class="datos-container">
           <!-- Dia y hora -->
-          <div style="width: 600px; max-width: 100%; margin: 15px auto">
+          <div class="dato">
             <img
-              src="https://images.ctfassets.net/pcz6cf5u0j0b/3gIfBzSkGUPL4AkJikHxXr/b67de5192aaff077ee7e21510400edc1/Calendario.png"
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/sMboM0gMKx4H2Em7gTdFK/170a249b63c3e635ccb0409a96f6b413/Icono_D__a_Hora.png?w=40"
               alt="Calendario ícono"
               width="40px"
-              style="vertical-align: middle"
+              class="vertical-center"
             />
-            <p style="display: inline; vertical-align: middle">
+            <p class="vertical-center">
               <strong>Día y Hora:</strong>
             </p>
-            <p style="display: inline; vertical-align: middle; margin-left: 13px">
+            <p class="vertical-center" style="margin-left: 13px">
               @appointment.startAt.
             </p>
           </div>
           <!-- Direccion -->
-          <div style="width: 600px; max-width: 100%; margin: 15px auto">
+          <div class="dato">
             <img
-              src="https://images.ctfassets.net/pcz6cf5u0j0b/61rqZtOxmtxwfdD3fCf1H4/7405a4c1bbea7749b39610c1497b0d81/Ubicacion.png"
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/3Few3PEtmzGj85PjHHAbSX/05baecec987f074b3278132a840db157/Icono_Direcci__n_Sucursal.png?w=40"
               alt="lugar ícono"
               width="40px"
-              style="vertical-align: middle"
+              class="vertical-center"
             />
-            <p style="display: inline; vertical-align: middle">
+            <p class="vertical-center">
               <strong>Sucursal:</strong>
             </p>
             <p
-              style="display: inline; vertical-align: middle; margin-left: 24px"
+              style="margin-left: 24px"
+              class="vertical-center"
               id="direccion-sucursal"
             >
               @branch.name.
