@@ -17,6 +17,9 @@
         font-size: 20px;
       }
       .container {
+        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
         background-color: #1c3f81;
       }
       .header {
@@ -44,6 +47,15 @@
         margin: 0 auto;
         display: block;
       }
+      .dato{
+        width: 600px; 
+        max-width: 100%; 
+        margin: 15px auto;
+      }
+      .vertical-center{
+        display: inline; 
+        vertical-align: middle;
+      }
       .cierre {
         background-color: white;
         text-align: center;
@@ -62,84 +74,87 @@
     <div class="container">
       <div class="header">
         <img
-          src="https://images.ctfassets.net/pcz6cf5u0j0b/7bgl813odn6rGqySYNpPXq/a29e248e521e9a0cc9ee18f73ce3fa41/consultorio-medico-logo.png"
-          alt="Consultorio Medico Logo"
+          src="https://images.ctfassets.net/pcz6cf5u0j0b/7bgl813odn6rGqySYNpPXq/a29e248e521e9a0cc9ee18f73ce3fa41/consultorio-medico-logo.png?w=300"
+          alt="Benamedic"
           class="center"
           width="300px"
         />
       </div>
-    </div>
-    <div class="content">
-      <!-- Banner -->
-      <img
-        src="https://images.ctfassets.net/pcz6cf5u0j0b/5Cd6sODpiq4lJtbNHRxFVF/95cd2aad647725978a13407cfa033bdb/Cita-cancelada.png"
-        alt="Cita Cancelada"
-        class="center"
-        width="450px"
-      />
-      <div class="texto-top">
-        <p>
-          <strong
-            >Hola, <span id="nombre-paciente">@customer.name,</span></strong
-          >
-        </p>
-        <p>
-            Tu cita con <strong>@company.name.</strong>
-          <br />
-          Ha sido <strong class="texto-red">cancelada</strong>.
-        </p>
-      </div>
-      <div class="datos-container">
-        <p style="text-align:center ;"><strong class="texto-red">Tu cita estaba programada para</strong>
-        </p>
-        <!-- Dia y hora -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/3gIfBzSkGUPL4AkJikHxXr/b67de5192aaff077ee7e21510400edc1/Calendario.png"
-            alt="Calendario ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Día y Hora:</strong>
-          </p>
-          <p style="display: inline; vertical-align: middle; margin-left: 13px">
-            @appointment.startAt.
-          </p>
-        </div>
-        <!-- Direccion -->
-        <div style="width: 600px; max-width: 100%; margin: 15px auto">
-          <img
-            src="https://images.ctfassets.net/pcz6cf5u0j0b/61rqZtOxmtxwfdD3fCf1H4/7405a4c1bbea7749b39610c1497b0d81/Ubicacion.png"
-            alt="lugar ícono"
-            width="40px"
-            style="vertical-align: middle"
-          />
-          <p style="display: inline; vertical-align: middle">
-            <strong>Sucursal:</strong>
-          </p>
-          <p
-            style="display: inline; vertical-align: middle; margin-left: 24px"
-            id="direccion-sucursal"
-          >
-            @branch.name.
-          </p>
-        </div>
-      </div>
-      <div class="cierre" style="margin-top:40px ;">
-        <p class="texto-red">
-            Para programar una nueva cita, da clic
-          <strong><a href="">aquí</a></strong>
-        </p>
-      </div>
-      <div class="footer">
+      <div class="content">
+        <!-- Banner -->
         <img
-          src="https://images.ctfassets.net/pcz6cf5u0j0b/aAPMaGsqPK0Mc0fAI7QyB/aa0dd5ebb20485c50eda46a47e075264/sentirte-acompanado.png"
-          alt="Sentirte acompañado es sentirte mejor"
-          width="400px"
+          src="https://images.ctfassets.net/pcz6cf5u0j0b/6SFopIfgrBxzvUzRqJN1T0/df879aae2c95e163cfc1d487792f1e0c/Banner_C_Cancelata.png?w=450"
+          alt="Cita Cancelada"
           class="center"
+          width="450px"
         />
+        <div class="texto-top">
+          <p>
+            <strong
+              >Hola, <span id="nombre-paciente">@customer.name,</span></strong
+            >
+          </p>
+          <p>
+            Tu cita con <strong>@company.name.</strong>
+            <br />
+            Ha sido <strong class="texto-red">cancelada</strong>.
+          </p>
+        </div>
+        <div class="datos-container">
+          <p style="text-align: center">
+            <strong class="texto-red">Tu cita estaba programada para</strong>
+          </p>
+          <!-- Dia y hora -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/sMboM0gMKx4H2Em7gTdFK/170a249b63c3e635ccb0409a96f6b413/Icono_D__a_Hora.png?w=40"
+              alt="Calendario ícono"
+              width="40px"
+              class="vertical-center"
+            />
+            <p class="vertical-center">
+              <strong>Día y Hora:</strong>
+            </p>
+            <p class="vertical-center" style="margin-left: 13px">
+              @appointment.startAt.
+            </p>
+          </div>
+          <!-- Direccion -->
+          <div class="dato">
+            <img
+              src="https://images.ctfassets.net/pcz6cf5u0j0b/3Few3PEtmzGj85PjHHAbSX/05baecec987f074b3278132a840db157/Icono_Direcci__n_Sucursal.png?w=40"
+              alt="lugar ícono"
+              width="40px"
+              class="vertical-center"
+            />
+            <p class="vertical-center">
+              <strong>Sucursal:</strong>
+            </p>
+            <p
+              class="vertical-center"
+              style="margin-left: 24px"
+              id="direccion-sucursal"
+            >
+              @branch.name.
+            </p>
+          </div>
+        </div>
+        <div class="cierre" style="margin-top: 40px">
+          <p class="texto-red">
+            Para programar una nueva cita, da clic
+            <strong><a href="">aquí</a></strong>
+          </p>
+        </div>
+        <div class="footer">
+          <img
+            src="https://images.ctfassets.net/pcz6cf5u0j0b/aAPMaGsqPK0Mc0fAI7QyB/aa0dd5ebb20485c50eda46a47e075264/sentirte-acompanado.png"
+            alt="Sentirte acompañado es sentirte mejor"
+            width="400px"
+            class="center"
+          />
+        </div>
       </div>
     </div>
+    
   </body>
 </html>
